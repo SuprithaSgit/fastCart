@@ -1,0 +1,127 @@
+.footer-cont {
+	background-color: #f8f8f8;
+	width: 100%;
+	margin-top: 1rem;
+}
+.footer {
+	/* background-color: orange; */
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	margin: 0 auto;
+	padding: 1.5rem;
+}
+
+.service-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.service-box {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	gap: 1rem;
+	width: 50%;
+	padding-right: 2rem;
+	position: relative;
+	/* justify-content: center; */
+}
+
+.service-box:nth-child(even)::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 50%;
+	left: -80px;
+	border: 1px dashed #c1c1c1;
+}
+
+.service-box h5 {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.about-section {
+	display: flex;
+	flex: 1;
+	padding: calc(30px + (50 - 30) * ((100vw - 320px) / (1920 - 320))) 0;
+	gap: 1rem;
+	border-top: 1px dashed #c1c1c1;
+	border-bottom: 1px dashed #c1c1c1;
+}
+
+.about-section .about {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	gap: 10px;
+}
+
+.about ul li {
+	list-style: none;
+	padding: 10px;
+	color: #4a5568;
+}
+.about p {
+	line-height: 1.5rem;
+	color: #4a5568;
+}
+
+.about ul li:hover {
+	list-style: disc;
+	color: #d99f46;
+	margin-left: 2rem;
+	text-decoration: underline;
+	transition: 0.4s ease-in-out;
+}
+.about .contact {
+	display: flex;
+	gap: 15px;
+	align-items: flex-start;
+	width: 100%;
+}
+.about-icons {
+	margin-top: 0.2rem;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.contact .icon-contact {
+	width: 100%;
+	padding-bottom: 1rem;
+	border-bottom: 1px dashed #c1c1c1;
+}
+
+.icon-contact p {
+	font-size: 1rem;
+	font-weight: 400;
+	padding-bottom: 0.5rem;
+}
+
+.icon-contact h5 {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.footer-path {
+	margin-top: 2rem;
+	color: #4a5568;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+.footer-path .social-links {
+	display: flex;
+	gap: 10px;
+}
+
+.footer-icons {
+	display: flex;
+	gap: 10px;
+}
